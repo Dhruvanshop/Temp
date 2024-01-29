@@ -1,0 +1,240 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container{
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  
+}
+main{
+  width: 100%;
+  height: 100vh;
+  background-color: #F6F6F6;
+}
+button{
+  background-color: transparent;
+  border: none;
+}
+nav{
+  width: 100%;
+  background-color: #F6F6F6;
+
+}
+a,ul{
+  text-decoration: none;
+  list-style:none;
+}
+
+.nav-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+display: none;
+}
+.nav-links{
+  width: 28%;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+ 
+}
+.nav-button{
+  display: flex;
+  width: 59%;
+  justify-content: space-between;
+}
+.nav-button button{
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px ;
+  width: 80px;
+}
+
+.nav-button button:hover{
+  color: #ffffff;
+  background-color: #007A82;
+}
+
+.banner-content{
+  display: flex;
+  margin-top: 40px;
+}
+.banner-text{
+  width: 58%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  padding-bottom: 50px;
+}
+.banner-img{
+  min-width: 500px;
+  height: auto;
+
+}
+.banner-img img{
+  width: 100%;
+  height: 100%;
+  max-height: 700px;
+}
+.line{
+  border: 2px solid rgba(245, 175, 45, 0.933);
+  width: 70px;
+  height: .5px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 10px;
+  border-radius: 2px;
+}
+.Buisness-consultant h3{
+  color: #007A82;
+
+}
+.Buisness-consultant{
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.heading-text{
+  width: 90%;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.banner-desc{
+  width: 85%;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+.banner-text p{
+  opacity: .7;
+}
+.banner-button button{
+  background-color: #007A82;
+  color: #ffffff;
+  padding: 15px;
+  border-radius: 50px;
+  width: 130px;
+  margin-bottom: 40px;
+}
+.banner-bullet-points{
+  width: 80%;
+}
+.bullet-up li,.bullet-down li{
+display: inline;
+font-size: 20px;
+opacity: .7;
+}
+.bullet-down{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.dot{
+  color:rgba(245, 175, 45, 0.933);
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.cards{
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  
+
+}
+.card{
+  position: relative;
+  top: -40px;
+  background-color: #ffffff;
+  margin-right: 20px;
+  box-shadow: 1px 1px 8px 1px #00000063;
+  width: 24%;
+  padding: 20px;
+  
+}
+.card:hover{
+  background-color: #007A82;
+}
+.card:hover .card-heading{
+  color: rgba(245, 175, 45, 0.933);
+
+}
+.card:hover .card-desc{
+  color: #ffffff;
+}
+.card-heading{
+  font-size: 1.5rem;
+   width: 60%;
+   color: #007A82;
+}
+.card-desc{
+  opacity: .7;
+  margin-top: 10px;
+
+}
+.card-line{
+  border: 2px solid rgba(245, 175, 45, 0.933);
+ 
+  height: .5px;
+  border-radius: 2px;
+  margin: 0 auto;
+  
+  margin-bottom: 10px;
+  margin-top: 10px;
+
+}
+.mobile-menu{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #007A82;
+}
+@media screen and (max-width: 1024px){
+  .container{
+    max-width: 992px;
+  }
+  .banner-content{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .banner-img {
+      width: 85%;
+      height:500px
+  }
+  .banner-text{
+    width: 100%;
+    align-items: start;
+    
+  }
+  .Buisness-consultant,.heading-text,.banner-desc,.card{
+    width: 100%;
+  }
+  .cards{
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .nav-links{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 30px;
+    gap: 10px;
+    padding: 20px;
+   
+  }
+  .menu{
+       padding: 10px;
+      display: block; 
+
+  }
+  .nav-item{
+    padding-left: 20px;
+
+  }
+  .nav-button{
+    width: 60%;
+  }
+}
